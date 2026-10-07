@@ -1,12 +1,16 @@
-// โครงเริ่มต้นของรายวิชา: ยังไม่มีหน้าจอของ task ใด ๆ
-// หน้าจอจริงจะถูกสร้างใน src/pages/ ตาม task ใน tasks.md ทีละหน้า
+import SlotPicker from './pages/SlotPicker.jsx'
+
+// รองรับ: FR-BKG-01, FR-BKG-06
 export default function App() {
   return (
-    <main className="mx-auto max-w-2xl p-6">
-      <h1 className="text-2xl font-bold text-teal-800">ระบบจองคิวตรวจสุขภาพ</h1>
-      <p className="mt-2 text-slate-600">
-        โครงหน้าจอพร้อมแล้ว หน้าจอของแต่ละ task จะอยู่ในโฟลเดอร์ src/pages/
-      </p>
+    <main className="min-h-screen bg-slate-100 p-6">
+      <div className="mx-auto max-w-4xl">
+        <header className="mb-6 text-center">
+          <h1 className="text-3xl font-bold text-teal-800">ระบบจองคิวตรวจสุขภาพ</h1>
+          <p className="mt-2 text-slate-600">เลือกแพ็กเกจและช่วงเวลาตรวจสุขภาพที่ต้องการ</p>
+        </header>
+        <SlotPicker />
+      </div>
     </main>
   )
 }

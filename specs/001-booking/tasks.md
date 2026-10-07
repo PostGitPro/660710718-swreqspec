@@ -11,7 +11,7 @@ Spec ID: SPEC-BKG-001
 - ไฟล์ที่แตะ: backend/app/db/models.py, backend/app/db/session.py, backend/app/db/migrations/001_init.py, backend/tests/conftest.py
 - ต้องทำหลัง: ไม่มี
 - เสร็จเมื่อ: migration สร้างตาราง slots, bookings, audit_logs และ test SQLite ในหน่วยความจำพร้อมใช้งาน
-- สถานะ: พร้อมทำ
+- สถานะ: เสร็จ รอทีมตรวจ
 
 ### T-02 สร้าง API ค้นหาช่วงว่างและคำนวณที่นั่งคงเหลือ
 - รองรับ: FR-BKG-01, FR-BKG-06, NFR-PERF-01
@@ -75,7 +75,7 @@ Spec ID: SPEC-BKG-001
 - ไฟล์ที่แตะ: frontend/src/pages/SlotPicker.jsx, frontend/src/api/client.js, frontend/src/App.jsx
 - ต้องทำหลัง: ไม่มี
 - เสร็จเมื่อ: ผู้ใช้เลือกแพ็กเกจและดูช่วงเวลาว่างที่ได้จาก API จำลองพร้อมจำนวนที่นั่งคงเหลือ
-- สถานะ: พร้อมทำ
+- สถานะ: เสร็จ รอทีมตรวจ
 
 ### T-10 สร้างหน้้ายืนยันการจองและแสดงเหตุช่วงเวลาเต็มพร้อม 3 ตัวเลือก
 - รองรับ: FR-BKG-03, FR-BKG-04
