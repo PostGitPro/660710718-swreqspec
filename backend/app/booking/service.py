@@ -24,7 +24,7 @@ def create_booking(db: Session, hn: str, slot_id: int) -> Booking:
     if slot is None:
         raise ValueError("ไม่พบช่วงเวลา")
     if slot.remaining < 0:
-        raise SlotFullError(slot_id)
+        raise SlotFullError(slot_id) 
 
     slot.remaining -= 1
     booking = Booking(
